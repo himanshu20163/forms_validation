@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validation Web Forms</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" defer src="index.js"></script>
+	<script type="text/javascript" defer src="user_input_check.js"></script>
+</head>
+<body onload="myFunction()">
+	<div id="main_container">
+    <h1>Validating Web Forms</h1>
+        <label>First Name</label>
+		<input type="text" name="fname" id="fname" onkeyup="first_name_check()" style="border-style: none;">
+		<p id="first_alert"></p>
+
+		<label>Last Name</label>
+		<input type="text" name="lname" id="lname" onkeydown="last_name_check()">
+		<p id="last_alert"></p>
+
+		<label>Email</label>
+		<input type="email" name="Email" id="email_address" onkeydown="email_check()">
+		<p id="email_alert"></p>
+
+		<label>Password</label>
+		<input type="password" name="password" id="user_password" onkeydown="password_check()">
+		<p id="password_alert"></p>
+
+		<label>Telephone</label>
+		<input type="number" name="Telephone" id="mobile_no" onkeydown="telephone_check()">
+		<p id="telephone_alert"></p>
+
+		<label>Your bio</label>
+		<input type="text" name="biodata" id="bio_data" onkeydown="yourbio_check()">
+		<p id="bio_alert"></p>
+		<input type="button" value="submit" id="get_data"  onclick="himanshu()">
+		
+	</div>
+</body>
+</html>
